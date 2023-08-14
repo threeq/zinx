@@ -10,12 +10,10 @@ import (
 	"fmt"
 	"os"
 	"reflect"
-	"testing"
 	"time"
 
 	"github.com/aceld/zinx/zlog"
 	"github.com/aceld/zinx/zutils/commandline/args"
-	"github.com/aceld/zinx/zutils/commandline/uflag"
 )
 
 const (
@@ -195,8 +193,8 @@ func init() {
 
 	// Note: Prevent errors like "flag provided but not defined: -test.paniconexit0" from occurring in go test.
 	// (防止 go test 出现"flag provided but not defined: -test.paniconexit0"等错误)
-	testing.Init()
-	uflag.Parse()
+	//testing.Init()
+	//uflag.Parse()
 
 	// after parsing
 	args.FlagHandle()
